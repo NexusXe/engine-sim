@@ -43,7 +43,7 @@ jobs:
     # Actual install step (only runs if the cache is empty)
     - name: Install boost
       if: steps.cache-boost.outputs.cache-hit != 'true'
-      uses: NexusXe/install-boost@v2.3.1
+      uses: MarkusJx/install-boost
       with:
         # Set the boost version (required)
         boost_version: ${{env.BOOST_VERSION}}
